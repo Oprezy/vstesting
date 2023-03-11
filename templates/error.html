@@ -1,0 +1,15 @@
+
+
+<div class="box">
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        <ul>
+        {% for message in messages %}
+          <li style="color: brown;">{{ message }}</li>
+        {% endfor %}
+        </ul>
+        <br><br>
+      {% endif %}
+    {% endwith %}
+    </div>
+    
